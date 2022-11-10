@@ -10,6 +10,31 @@
     width: auto;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "searchbar      profile-actions"
+        "profile-intro  header-btns";
+}
+
+.sidebar {
+    grid-area: searchbar;
+}
+
+.profile-actions {
+    grid-area: profile-actions;
+}
+
+.profile-intro {
+    grid-area: profile-intro;
+}
+
+.header-btns {
+    grid-area: header-btns;
+}
+
 .dashboard-icon {
     height: 42px;
     aspect-ratio: 1/1;
