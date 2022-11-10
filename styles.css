@@ -5,8 +5,29 @@
     margin-top: 50px;
 }
 
+.profile-pic-big {
+    height: 48px;
+    width: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.profile-pic-small {
+    height: 32px;
+    width: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
 .icon {
     height: 32px;
+    width: auto;
+}
+
+.icon-small {
+    height: 24px;
     width: auto;
 }
 
@@ -17,22 +38,53 @@
     grid-template-areas: 
         "searchbar      profile-actions"
         "profile-intro  header-btns";
+        gap: 16px;
 }
 
-.sidebar {
+.searchbar {
     grid-area: searchbar;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-field {
+    height: 28px;
+    width: 60%;
+    border-radius: 8px;
+    border-style: solid;
 }
 
 .profile-actions {
     grid-area: profile-actions;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px
 }
 
 .profile-intro {
     grid-area: profile-intro;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.profile-intro-username {
+    font-size: 1.4rem;
 }
 
 .header-btns {
     grid-area: header-btns;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.header-btn {
+    height: 36px;
+    width: 64px;
 }
 
 .dashboard-icon {
