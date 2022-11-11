@@ -1,6 +1,18 @@
 body {
+    background-color: #E3E4DB;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #333333;
     margin: 0;
     padding: 0;
+}
+
+.dark-bg {
+    background-color: #333333;
+    color: #E3E4DB;
+}
+
+.dark-bg-pic {
+    border: #E3E4DB 2px solid;
 }
 
 .container {
@@ -24,6 +36,10 @@ body {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 16px;
+}
+
+.profile-name-small {
+    font-weight: 0;
 }
 
 .icon {
@@ -92,6 +108,8 @@ body {
 .header-btn {
     height: 36px;
     width: 64px;
+    border: none;
+    border-radius: 8px;
 }
 
 .dashboard-icon {
@@ -103,19 +121,18 @@ body {
 .sidebar {
     display: flex;
     flex-direction: column;
-    padding-left: 1.25rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    /* gap: 40px; */
-    /* width: min(40vh, 400px); */
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    border-radius: 0px 24px 24px 0px;
 }
 
 .sidebar-item {
     display: flex;
-    /* width: min(40vh, 200px); */
     flex-direction: row;
     align-items: center;
     gap: 16px;
+    font-size: 0.9rem;
 }
 
 .content {
@@ -136,16 +153,15 @@ body {
 }
 
 .project {
-    background-color: aqua;
-    width: 300px;
+    width: 275px;
     height: 275px;
     text-align: justify;
     flex-wrap: wrap;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-radius: 16px;
     padding-top: 1.5rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .extra-sections {
@@ -155,13 +171,12 @@ body {
 }
 
 .announcement-container, .trending-item-container {
-    background-color: aqua;
-    width: 400px;
+    width: 350px;
     height: 275px;
     border-radius: 16px;
     padding-top: 1.5rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
 }
 
 .announcement {
