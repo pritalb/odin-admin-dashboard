@@ -116,7 +116,7 @@ body {
 .content {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 64px;
 }
 
 .projects {
@@ -141,4 +141,18 @@ body {
     padding-top: 1.5rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+}
+
+.announcement-container {
+    background-color: aqua;
+    width: 400px;
+    height: 275px;
+    border-radius: 16px;
+    padding-top: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.announcement {
+    font-size: 0.8rem;
 }
