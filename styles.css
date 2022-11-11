@@ -127,7 +127,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
-    grid-row-gap: 64px;
+    grid-row-gap: 74px;
 }
 
 .project {
@@ -143,7 +143,13 @@ body {
     padding-right: 1.25rem;
 }
 
-.announcement-container {
+.extra-sections {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.announcement-container, .trending-item-container {
     background-color: aqua;
     width: 400px;
     height: 275px;
@@ -155,4 +161,23 @@ body {
 
 .announcement {
     font-size: 0.8rem;
+}
+
+.trending-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.trending-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
 }
